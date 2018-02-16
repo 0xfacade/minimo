@@ -2,6 +2,10 @@
 
 {{ if .Content }}
 <div class='entry'>
+  <div class='container fb-about--mobile'>
+    {{ partial "widgets/about" . }}
+  </div>
+
   {{ partial "entry/cover" . }}
   {{ partial "entry/content" . }}
 </div>

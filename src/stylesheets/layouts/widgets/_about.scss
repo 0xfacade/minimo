@@ -1,6 +1,6 @@
 .widget-about {
   .logo {
-    max-width: 5em;
+    max-width: 7em;
 
     a {
       display: block;
@@ -13,13 +13,21 @@
   }
 
   .site-title {
-    margin-bottom: 0;
-    @include font-size(1.75);
+    margin: 10px 0;
+    @include font-size(1.5);
   }
 
   .sidebar &.sep-after {
     &:after {
       border-bottom-color: $color__accent;
     }
+  }
+}
+
+.fb-about--mobile {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  .logo {
+    margin: 0 auto;
   }
 }

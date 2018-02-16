@@ -83,3 +83,23 @@
     }
   }
 }
+
+// When the navbar is hidden, show the about section on the homepage.
+// Otherwise, hide it.
+@media only screen and (min-width:$breakpoint-medium) {
+  // Rules that apply when the screen is wide enough to always show the navbar.
+  .fb-about--mobile, .fb-link-home {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:$breakpoint-medium - 1) {
+  // Rules that apply when the screen is not wide enough.
+  .sidebar .widget-about {
+    display: none;
+  }
+
+  .sidebar {
+    padding-top: 0.5em;
+  }
+}

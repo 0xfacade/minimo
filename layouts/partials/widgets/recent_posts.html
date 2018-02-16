@@ -6,6 +6,11 @@
 {{- $length := ( $config.length | default 5 ) -}}
 
 <section class='widget widget-recent_posts sep-after'>
+  <div class='fb-link-home'>
+    <a href='/' >
+      Go to homepage
+    </a>
+  </div>
   <header>
     <h4 class='title widget-title'>
       {{- ( i18n "recentPosts" ) | default $config.title -}}

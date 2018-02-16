@@ -1,5 +1,6 @@
 .widget-recent_posts {
   .sidebar & {
+    margin-top: 10px;
     .meta {
       display: none;
     }
@@ -8,4 +9,8 @@
       margin-top: 0;
     }
   }
+}
+
+.fb-link-home {
+  margin-bottom: 2em;
 }
