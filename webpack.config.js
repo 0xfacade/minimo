@@ -15,7 +15,7 @@ const define = new webpack.DefinePlugin({
 
 const extractCSS = new ExtractTextPlugin({
   filename: getPath =>
-    getPath('css/[name].[contenthash:8].css').replace('css', '../css')
+    getPath('css/[name].css').replace('css', '../css')
 })
 
 const assetsManifest = new AssetsPlugin({
@@ -43,7 +43,7 @@ const config = {
     main: path.join(__dirname, 'src/scripts', 'main.js')
   },
   output: {
-    filename: '[name].[chunkhash:8].js',
+    filename: '[name].js',
     path: path.join(__dirname, 'static', 'assets', 'js')
   },
   module: {
