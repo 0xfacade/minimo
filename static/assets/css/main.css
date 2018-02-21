@@ -964,12 +964,14 @@ label {
         display: none; } }
 
 @media only screen and (min-width: 920px) {
-  .fb-about--mobile, .fb-link-home {
+  .fb-about--mobile {
     display: none; } }
 
 @media only screen and (max-width: 919px) {
   .sidebar .widget-about {
     display: none; }
+  .sidebar .fb-link-home {
+    display: block; }
   .sidebar {
     padding-top: 0.5em; } }
 
@@ -1224,6 +1226,7 @@ summary {
     margin-top: 0; }
 
 .fb-link-home {
+  display: none;
   margin-bottom: 2em; }
 
 .widget-social_menu ul {

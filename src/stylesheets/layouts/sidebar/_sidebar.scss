@@ -88,7 +88,7 @@
 // Otherwise, hide it.
 @media only screen and (min-width:$breakpoint-medium) {
   // Rules that apply when the screen is wide enough to always show the navbar.
-  .fb-about--mobile, .fb-link-home {
+  .fb-about--mobile {
     display: none;
   }
 }
@@ -97,6 +97,10 @@
   // Rules that apply when the screen is not wide enough.
   .sidebar .widget-about {
     display: none;
+  }
+
+  .sidebar .fb-link-home {
+    display: block;
   }
 
   .sidebar {
